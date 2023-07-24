@@ -1,0 +1,243 @@
+*, html {
+    text-decoration: none;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    color: #4b2a22;
+}
+
+h1, h2, h3 {
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+header .botao {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #4b2a22;
+    font-size: 1.3em;
+    border-radius: 3px;
+}
+
+
+/* Navegacao */
+
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Cabecalho */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagem/camera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:  #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+}
+
+header div {
+    width: 70%;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+    background-color: #4b2a22;
+    color: #FFFFFF;
+}
+
+#sobre h2 {
+    color: #FFFFFF;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao {
+    padding: .3em;
+    text-decoration: none;
+    font-size: 1.3em;
+    background-color: #ffffffea;
+    color: #1c1c1c;
+    border-radius: .2em;
+}
+
+/* servicos */
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Fotos */ 
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#fotos h2 {
+    padding: 3em;
+    margin-bottom: 20px;
+}
+
+#fotos img {
+    width: 100%;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato a {
+    color: #000000;
+}
+
+
+/* rodape */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4b2a22;
+    color: #FFFFFF;
+    padding-top: 1.5em;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+@media screen and (min-width: 900px) {
+
+    nav {
+        display: flex;
+        background-color: #4b2a22;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+    }
+    
+    .Rauber {
+        display: flex;
+    }
+    
+    
+    nav a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: 22px;
+        font-family: Yellowtail, serif;
+        padding: 2em;
+    }
+
+
+    header {
+            height: 600px;
+            height: 60vh;
+            justify-content: center;
+    }
+
+    #sobre {
+        height: 300px;
+        height: 40vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #fotos h2 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #fotos img {
+        width: 33.3333333%;
+    }
+
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 500px;
+        margin: 0 auto;
+
+    }
+
+    #contato h2, #contato p {
+        width: 100%;
+        
+    }
+
+}
+
